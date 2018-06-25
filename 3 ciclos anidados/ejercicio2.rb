@@ -24,3 +24,20 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+cant_tr = 3
+cant_td = 4
+tbody = ''
+
+contador = 0
+
+cant_tr.times do
+  tr = ''
+  cant_td.times do
+    contador += 1
+    tr += "\t\t<td>#{contador}</td>\n"
+  end
+  tbody += "\t<tr>\n#{tr}\t</tr>\n"
+end
+
+puts "<table>\n#{tbody}</table>\n"
