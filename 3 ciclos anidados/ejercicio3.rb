@@ -15,8 +15,7 @@ until salir
     salir = true
   else
     output = ''
-    10.times do |i|
-      i += 1
+    1.upto(10) do |i|
       output += "#{mult}x#{i} = #{mult * i}\n"
     end
   end
