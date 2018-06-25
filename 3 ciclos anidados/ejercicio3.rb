@@ -9,19 +9,15 @@ until salir
 
   puts 'Ingrese un valor o ingrese cero para salir:'
 
-  largo = gets.chomp.to_i
+  mult = gets.chomp.to_i
 
-  if largo.zero?
+  if mult.zero?
     salir = true
   else
     output = ''
-    largo.times do |i|
+    10.times do |i|
       i += 1
-      largo.times do |e|
-        e += 1
-        output += "#{i * e}\t"
-      end
-      output += "\n"
+      output += "#{mult}x#{i} = #{mult * i}\n"
     end
   end
   puts output
