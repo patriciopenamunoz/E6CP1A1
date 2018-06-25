@@ -12,7 +12,7 @@ a = 5
 b = ''
 
 a.times do
-  b = "<li> hola </li>\n"
+  b += "<li> hola </li>\n"
 end
 
-puts b
+puts "<ul>\n#{b}</ul>\n"
